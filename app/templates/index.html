@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for comp in infringers %}
+    <div><p>{{ comp.company }} Patent: <b>{{ comp.body }}</b></p></div>
+    {% endfor %}
+{% endblock %}

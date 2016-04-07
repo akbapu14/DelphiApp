@@ -1,0 +1,14 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Patent Infringement Search</h1>
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          Enter Keywords:<br>
+          {{ form.openid(size=80) }}<br>
+      </p>
+      <p><input type="submit" value="Go"></p>
+  </form>
+{% endblock %}
